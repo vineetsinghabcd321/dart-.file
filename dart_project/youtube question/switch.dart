@@ -4,28 +4,31 @@ if the destination zone 'abc' the shipping cost is $7 per kilogram
 if the destination zone 'pqr' the shipping cost is $10 per kilogram
 if the destination zone is not 'xyz' , 'abc' and 'pqr' , display an error message */
 
-  void calculateShippinngCost (String destinationZone, double weight) {
+void calculateShippingCost(String destinationZone, double weight) {
   double shippingCost;
 
   switch (destinationZone) {
-    case 'XYZ' :
-    shippingCost = 5 * weight;
-    break; 
+    case 'XYZ':
+      shippingCost = 5 * weight;
+      break;
 
-    case 'ABC' :
-    shippingCost = 7 * weight;
-    break;
+    case 'ABC':
+      shippingCost = 7 * weight;
+      break;
 
-    case 'PQR' :
-    shippingCost = 10 * weight;
-    break;
-    default :
-    print('Error invalid destination zone');
-    return;
+    case 'PQR':
+      shippingCost = 10 * weight;
+      break;
+
+    default:
+      print('Error: Invalid destination zone');
+      return;
   }
-    print('shipping cost to $destinationZone for $weight kg package: \$$shippingCost');
+
+  print('Shipping cost to $destinationZone for $weight kg package: \$$shippingCost');
 }
-  void main() {
-    // example usage
-    calculateShippinngCost('XYZ', 2.5); // change the weight as u need
-  }
+
+void main() {
+  // Example usage
+  calculateShippingCost('XYZ', 2.5);
+}
