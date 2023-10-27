@@ -5,6 +5,7 @@ void main() {
   myQueueList.add(10);
   myQueueList.add(20);
   myQueueList.add(30);
+  myQueueList.add(30);
 
   print('Queue : $myQueueList');
 
