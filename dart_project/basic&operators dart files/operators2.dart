@@ -1,16 +1,14 @@
 //Create a Dart program that compares two numbers and prints whether the first number is 
 //greater than, less than, or equal to the second number.
 
-void main () {
+void main() {
+  int number1 = 9, number2 = 10;
 
-  int firstNumber = 9;
-  int secondNumber = 6;
-
-  if(firstNumber > secondNumber) {
-    print('$firstNumber is greater than secondNumber');
-  } else if (firstNumber < secondNumber) {
-    print('$firstNumber is less than $secondNumber');
+  if(number1 > number2) {
+    print("$number1 is greater then $number2");
+  } else if (number1 < number2) {
+    print("$number1 is less then $number2");
   } else {
-    print('firstNumber is equal to secondNumber');
+    print("$number1 is equal to $number2");
   }
-  }
+}
